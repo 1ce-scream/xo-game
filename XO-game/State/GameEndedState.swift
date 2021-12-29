@@ -21,6 +21,7 @@ public class GameEndedState: GameState {
     }
     
     public func begin() {
+        Log(.gameFinished(winner: self.winner))
         self.gameViewController?.winnerLabel.isHidden = false
         if let winner = winner {
             self.gameViewController?.winnerLabel.text = self.winnerName(from: winner) + " win"
