@@ -21,6 +21,9 @@
 		F874E4F12225DFF700364CAE /* Referee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F874E4F02225DFF700364CAE /* Referee.swift */; };
 		F874E4F32225E0B100364CAE /* GameboardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F874E4F22225E0B100364CAE /* GameboardSize.swift */; };
 		F874E4F52225E2CD00364CAE /* Gameboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F874E4F42225E2CD00364CAE /* Gameboard.swift */; };
+		FEBABF3E277CBBD200CEB65F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBABF3D277CBBD200CEB65F /* GameState.swift */; };
+		FEBABF40277CBBF800CEB65F /* PlayerInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBABF3F277CBBF800CEB65F /* PlayerInputState.swift */; };
+		FEBABF42277CBC4800CEB65F /* GameEndedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBABF41277CBC4800CEB65F /* GameEndedState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		F874E4F02225DFF700364CAE /* Referee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Referee.swift; sourceTree = "<group>"; };
 		F874E4F22225E0B100364CAE /* GameboardSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardSize.swift; sourceTree = "<group>"; };
 		F874E4F42225E2CD00364CAE /* Gameboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameboard.swift; sourceTree = "<group>"; };
+		FEBABF3D277CBBD200CEB65F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		FEBABF3F277CBBF800CEB65F /* PlayerInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInputState.swift; sourceTree = "<group>"; };
+		FEBABF41277CBC4800CEB65F /* GameEndedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndedState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 				F874E4702224621100364CAE /* AppDelegate.swift */,
 				F874E4722224621100364CAE /* GameViewController.swift */,
 				F874E4F02225DFF700364CAE /* Referee.swift */,
+				FEBABF3C277CBBA700CEB65F /* State */,
 				F874E4E62225CB3F00364CAE /* Models */,
 				F874E4E52225CB3100364CAE /* Views */,
 				F874E4772224621300364CAE /* Assets.xcassets */,
@@ -113,6 +120,16 @@
 				F874E4EE2225DE4500364CAE /* Player.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FEBABF3C277CBBA700CEB65F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				FEBABF3D277CBBD200CEB65F /* GameState.swift */,
+				FEBABF3F277CBBF800CEB65F /* PlayerInputState.swift */,
+				FEBABF41277CBC4800CEB65F /* GameEndedState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBABF42277CBC4800CEB65F /* GameEndedState.swift in Sources */,
+				FEBABF40277CBBF800CEB65F /* PlayerInputState.swift in Sources */,
 				F874E4732224621100364CAE /* GameViewController.swift in Sources */,
 				F874E4DD2225C25D00364CAE /* GameboardPosition.swift in Sources */,
 				F874E4DF2225C76000364CAE /* MarkView.swift in Sources */,
@@ -195,6 +214,7 @@
 				F874E4E22225CABF00364CAE /* OView.swift in Sources */,
 				F874E4F32225E0B100364CAE /* GameboardSize.swift in Sources */,
 				F874E4E42225CB0700364CAE /* XView.swift in Sources */,
+				FEBABF3E277CBBD200CEB65F /* GameState.swift in Sources */,
 				F874E4DB2225C1AC00364CAE /* GameboardView.swift in Sources */,
 				F874E4EF2225DE4500364CAE /* Player.swift in Sources */,
 			);
